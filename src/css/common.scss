@@ -1,0 +1,195 @@
+@import 'colors';
+@import 'function';
+@import 'mixin';
+/** font: color*/
+
+.color-red {
+    color: $redColor;
+}
+
+.color-theme {
+    color: $themeColor;
+}
+
+.color-theme-h {
+    color: $themeHover;
+}
+
+.color-yellow {
+    color: $yellowColor;
+}
+
+.color-green {
+    color: $greenColor;
+}
+
+.color-default {
+    color: $defaultColor;
+}
+
+.color-default2 {
+    color: $default2Color;
+}
+
+/** font: size*/
+
+.font-8 {
+    font-size: pxToRem(8px)
+}
+
+.font-10 {
+    font-size: pxToRem(10px)
+}
+
+.font-12 {
+    font-size: pxToRem(12px)
+}
+
+.font-14 {
+    font-size: pxToRem(14px)
+}
+
+.font-15 {
+    font-size: pxToRem(15px)
+}
+
+.font-16 {
+    font-size: pxToRem(16px)
+}
+
+.font-18 {
+    font-size: pxToRem(18px)
+}
+
+/** padding、margin*/
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.p-b-10 {
+    padding-bottom: 10px;
+}
+
+.p-l-10 {
+    padding-left: 10px;
+}
+
+.p-r-10 {
+    padding-right: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.m-t-0 {
+    margin-top: 0;
+}
+
+.m-5 {
+    margin: 5px;
+}
+
+.m-10 {
+    margin: 10px;
+}
+
+.m-t-10 {
+    margin-top: 10px;
+}
+
+.m-b-10 {
+    margin-bottom: 10px;
+}
+
+.m-l-10 {
+    margin-left: 10px;
+}
+
+.m-r-10 {
+    margin-right: 10px;
+}
+
+.m-15 {
+    margin: 15px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+/** relative, flex, block, clear:both*/
+
+.relative {
+    @include relative;
+}
+
+.block {
+    @include block;
+}
+
+.flex {
+    @include flex;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+/** text: center、left、right*/
+
+.text-c {
+    text-align: center;
+}
+
+.text-l {
+    text-align: left;
+}
+
+.text-r {
+    text-align: right;
+}
+
+/** cursor*/
+
+.cursor {
+    cursor: pointer;
+}
+
+/** 单行、多行省略溢出*/
+
+.ellipsis_row_1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis_row_2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/** img: 100%*/
+
+.img-100 {
+    width: 100%;
+    line-height: 0;
+    >img {
+        width: 100%;
+    }
+}
